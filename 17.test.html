@@ -55,7 +55,21 @@
         }*/
 
         //Запросить координаты точки (x, y) и определить номер четверти, в которую попала эта точка. Необходимо учесть случаи попадания точки на оси X или Y или в начало координат.
-        
+        let x = parseInt(prompt("Enter x: "))
+        let y = parseInt(prompt("Enter y: "))
+        if (x > 0 && y > 0) {
+            alert("1 chetver")
+        }
+        else if (x > 0 && y < 0) {
+            alert("2 chetver")
+        }
+        else if (x < 0 && y < 0) {
+            alert("3 chetver")
+        }
+        else if (x < 0 && y > 0) {
+            alert("4 chetver")
+        }
+        else { alert("0") }
 
 
 
